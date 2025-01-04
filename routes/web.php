@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,6 +31,8 @@ Route::middleware(['auth', 'verified'])
         //register all other protected routes
         //CRUD POSTS
     
+        Route::resource('products', ProductController::class);
+
     });
 
 Route::middleware('auth')->group(function () {
