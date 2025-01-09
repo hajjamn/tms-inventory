@@ -8,8 +8,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'TMS Inventario') }}</title>
 
+    <link rel="icon" href="https://res.cloudinary.com/dfqmg1mwx/image/upload/v1736455027/sh39a7ma3i63x7bghtqp.png"
+        type="image/png">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
