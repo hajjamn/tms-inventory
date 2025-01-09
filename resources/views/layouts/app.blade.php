@@ -28,7 +28,8 @@
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                     <div class="logo_laravel">
                         <!-- Updated to use your uploaded logo with Bootstrap classes for size control -->
-                        <img src="{{ asset('logo.png') }}" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                        <img src="{{ asset('storage/logo.png') }}" alt="Logo" class="img-fluid"
+                            style="max-width: 150px;">
                     </div>
                     {{-- config('app.name', 'Laravel') --}}
                 </a>
