@@ -65,18 +65,19 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'url' => env('DB_URL'),  // Use the DATABASE_URL provided by Railway
+            'host' => parse_url(env('DB_URL'))['host'],  // Extract the host from DATABASE_URL
+            'port' => parse_url(env('DB_URL'))['port'],  // Extract the port from DATABASE_URL
+            'database' => ltrim(parse_url(env('DB_URL'))['path'], '/'),  // Extract the database name
+            'username' => parse_url(env('DB_URL'))['user'],  // Extract the username from DATABASE_URL
+            'password' => parse_url(env('DB_URL'))['pass'],  // Extract the password from DATABASE_URL
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
             'search_path' => 'public',
             'sslmode' => 'prefer',
         ],
+
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
@@ -125,7 +126,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_'),
         ],
 
         'default' => [
