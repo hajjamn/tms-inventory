@@ -20,7 +20,8 @@
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
         <div>
             <a href="/">
-                <img src="{{ asset('logo.png') }}" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                <img src="https://res.cloudinary.com/dfqmg1mwx/image/upload/v1736454628/urlk9uzxwfqt43opnjko.png"
+                    alt="Logo" class="img-fluid" style="max-width: 150px;">
             </a>
         </div>
 

@@ -27,7 +27,7 @@
 
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
+                <a class="navbar-brand d-flex align-items-center" href="{{ url('/admin/products') }}">
                     <div class="logo_laravel">
                         <!-- Updated to use your uploaded logo with Bootstrap classes for size control -->
                         <img src="https://res.cloudinary.com/dfqmg1mwx/image/upload/v1736454628/urlk9uzxwfqt43opnjko.png"
