@@ -34,9 +34,9 @@
             <thead>
                 <tr>
                     <th>Nome</th>
-                    <th>Codice a barre</th>
                     <th>Prezzo</th>
                     <th>Inventario</th>
+                    <th>Codice a barre</th>
                     <th>Azioni</th>
                 </tr>
             </thead>
@@ -44,9 +44,9 @@
                 @foreach ($products as $product)
                     <tr>
                         <td>{{ $product->name }}</td>
-                        <td>{{ $product->barcode }}</td>
                         <td>{{ $product->price }} €</td>
                         <td>{{ $product->inventory }}</td>
+                        <td>{{ $product->barcode }}</td>
                         <td>
                             <a href="{{ route('admin.products.show', $product) }}"
                                 class="btn btn-info btn-sm">Visualizza</a>

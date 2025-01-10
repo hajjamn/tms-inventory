@@ -17,12 +17,6 @@
             </div>
 
             <div class="mb-3">
-                <label for="barcode" class="form-label">Codice a barre:</label>
-                <input type="text" name="barcode" id="barcode" class="form-control"
-                    value="{{ old('barcode', $product->barcode) }}">
-            </div>
-
-            <div class="mb-3">
                 <label for="price" class="form-label">Prezzo:</label>
                 <input type="number" name="price" id="price" class="form-control"
                     value="{{ old('price', $product->price) }}" step="0.01" required>
@@ -32,6 +26,12 @@
                 <label for="inventory" class="form-label">Inventario:</label>
                 <input type="number" name="inventory" id="inventory" class="form-control"
                     value="{{ old('inventory', $product->inventory) }}">
+            </div>
+            
+            <div class="mb-3">
+                <label for="barcode" class="form-label">Codice a barre:</label>
+                <input type="text" name="barcode" id="barcode" class="form-control"
+                    value="{{ old('barcode', $product->barcode) }}">
             </div>
 
             <button type="submit" class="btn btn-primary">Aggiorna</button>
