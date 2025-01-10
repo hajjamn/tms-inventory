@@ -7,6 +7,9 @@ npm run build
 # Clear cache
 php artisan optimize:clear
 
+# Temporary: Refresh the database migrations
+php artisan migrate:fresh --force
+
 # Cache the various components of the Laravel application
 php artisan config:cache
 php artisan event:cache
