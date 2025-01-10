@@ -16,12 +16,12 @@
 
             <div class="mb-3">
                 <label for="barcode" class="form-label">Codice a barre:</label>
-                <input type="text" name="barcode" id="barcode" class="form-control">
+                <input type="text" name="barcode" id="barcode" class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label for="price" class="form-label">Prezzo:</label>
-                <input type="number" name="price" id="price" class="form-control" step="0.01" required>
+                <input type="number" name="price" id="price" class="form-control" step="0.01">
             </div>
 
             <div class="mb-3">
