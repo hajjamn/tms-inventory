@@ -25,7 +25,7 @@ class ProductRequest extends FormRequest
             'name' => 'required',
             'barcode' => 'required|string',
             'price' => 'nullable|numeric',
-            'inventory' => 'required|integer'
+            'inventory' => 'nullable|integer'
         ];
     }
 }
