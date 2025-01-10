@@ -4,13 +4,13 @@
 # Build assets using NPM
 npm run build
 
-# Clear cache to prevent stale data
+# Clear cache
 php artisan optimize:clear
 
-# Temporary: Refresh the database migrations and seed
+# Drop and reapply migrations, then seed the database
 php artisan migrate:fresh --seed --force
 
-# Cache the various components of the Laravel application
+# Cache Laravel configurations
 php artisan config:cache
 php artisan event:cache
 php artisan route:cache
