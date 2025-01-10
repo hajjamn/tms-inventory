@@ -23,9 +23,9 @@ class ProductRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'barcode' => 'nullable|string',
-            'price' => 'required|numeric',
-            'inventory' => 'nullable|integer'
+            'barcode' => 'required|string',
+            'price' => 'nullable|numeric',
+            'inventory' => 'required|integer'
         ];
     }
 }
