@@ -19,7 +19,7 @@
             <div class="mb-3">
                 <label for="price" class="form-label">Prezzo:</label>
                 <input type="number" name="price" id="price" class="form-control"
-                    value="{{ old('price', $product->price) }}" step="0.01" required>
+                    value="{{ old('price', $product->price) }}" step="0.01">
             </div>
 
             <div class="mb-3">
@@ -31,7 +31,7 @@
             <div class="mb-3">
                 <label for="barcode" class="form-label">Codice a barre:</label>
                 <input type="text" name="barcode" id="barcode" class="form-control"
-                    value="{{ old('barcode', $product->barcode) }}">
+                    value="{{ old('barcode', $product->barcode) }}" required>
             </div>
 
             <button type="submit" class="btn btn-primary">Aggiorna</button>
